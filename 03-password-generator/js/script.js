@@ -67,12 +67,12 @@ const getStrengthText = (point) => {
 
 //GET STRENGTH POINT
 const getStrengthPoint = (params) => {
-    let failSafe = 0;
-    if(params.passwordLength < 5){
-        failSafe = 5;
-    }else{
-        failSafe = params.passwordLength;
-    }
+  let failSafe = 0;
+  if (params.passwordLength < 5) {
+    failSafe = 5;
+  } else {
+    failSafe = params.passwordLength;
+  }
   const point =
     (Number(params.hasUppercase) +
       Number(params.hasLowercase) +
@@ -159,4 +159,18 @@ const validateInputs = (params) => {
     return false;
   }
   return true;
+};
+
+btnCopy.addEventListener("click", () => {
+  copyToClipboard(lblPassword.textContent);
+});
+
+const copyToClipboard = async (text) => {
+  //Browser WEB API
+  try {
+    await navigator.clipboard.writeText(text);
+    alert("Copied to clipboard");
+  } catch (err) {
+    console.log(err);
+  }
 };
