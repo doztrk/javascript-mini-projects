@@ -1,0 +1,111 @@
+:root {
+	--color1: #1c2127;
+	--color2: #0b385f;
+	--color3: #3373b0;
+	--color4: #bed4e9;
+	--color5: #e7f1fb;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Times New Roman", Times, serif;
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(180deg, var(--color2), var(--color3));
+	padding: 10px;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+}
+
+.card {
+	background-color: var(--color5);
+	width: 36rem;
+	max-width: 540px;
+	margin: 100px auto;
+	padding: 20px;
+	box-shadow: 1px 3px 5px 3px var(--color1);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+.card h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.card .quote {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.card .quote::before,
+.card .quote::after {
+	content: '"';
+}
+.card .author {
+	display: block;
+	font-weight: bolder;
+	float: right;
+	margin-right: 30px;
+	font-size: 1rem;
+	position: relative;
+}
+.card .author:before {
+	content: "";
+	width: 5px;
+	height: 1px;
+	background-color: var(--color1);
+	position: absolute;
+	top: 50%;
+	left: -10px;
+}
+.button-container {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+}
+#generate,
+#share,
+#copy {
+	padding: 5px 10px;
+	outline: 0.5px solid var(--color1);
+	border: none;
+	cursor: pointer;
+	color: var(--color1);
+	transition: all 0.2s ease-in;
+	background-color: var(--color3);
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-ms-border-radius: 25px;
+	-o-border-radius: 25px;
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+}
+#generate:hover,
+#share:hover,
+#copy:hover {
+	background-color: var(--color2);
+	color: var(--color5);
+}
+#copy-notification {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--color1);
+	color: var(--color5);
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+	opacity: 0; /* Initially invisible */
+	transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
