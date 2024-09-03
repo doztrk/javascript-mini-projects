@@ -1,0 +1,114 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/img.jpg) no-repeat;
+}
+h1 {
+	color: rgb(226, 244, 62);
+	text-align: center;
+	font-size: 4rem;
+	text-transform: uppercase;
+	margin-top: 3rem;
+}
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.form input {
+	background-color: rgba(204, 210, 21, 0.5);
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-top: 20px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.btnDiv {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 50px 0px;
+}
+.btn {
+	width: 200px;
+	padding: 5px;
+	border: 2px solid green;
+	color: whitesmoke;
+	background: none;
+	cursor: pointer;
+	font-size: 1.2rem;
+	border-radius: 10px;
+	transition: all 0.2s;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+}
+.btn:hover {
+	background-color: rgb(255, 0, 0, 0.8);
+}
+::placeholder {
+	color: #333;
+}
+.info {
+	margin-top: 10px;
+	text-align: center;
+	background-color: rgb(128, 128, 128, 0.35);
+	padding: 10px;
+	font-size: 1.25rem;
+}
+.generallyValue {
+	motion-path: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+}
+.generallyValue p {
+	font-size: 1.2rem;
+	padding: 5px;
+}
+.generallyValue .fa-circle {
+	font-size: 10px;
+	transform: translate(0px, -10px);
+	-webkit-transform: translate(0px, -10px);
+	-moz-transform: translate(0px, -10px);
+	-ms-transform: translate(0px, -10px);
+	-o-transform: translate(0px, -10px);
+}
+
+.felt {
+	motion-path: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: red;
+	margin-bottom: 10px;
+}
+.felt p {
+	font-size: 1.2rem;
+	padding: 5px;
+}
+.felt .fa-circle {
+	font-size: 10px;
+	transform: translate(0px, -10px);
+	-webkit-transform: translate(0px, -10px);
+	-moz-transform: translate(0px, -10px);
+	-ms-transform: translate(0px, -10px);
+	-o-transform: translate(0px, -10px);
+}
+.city,
+#weatherValue {
+	color: whitesmoke;
+	font-size: 1.5rem;
+}
